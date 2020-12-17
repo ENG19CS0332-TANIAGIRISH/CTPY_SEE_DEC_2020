@@ -1,1 +1,52 @@
 This is repository for Python code.
+5 a)
+n1 = 3
+data1= 	1 2
+	2 2
+	6 7
+n2 = 2
+data2=  3 3
+	4 4
+
+5 b)
+ def uniqueUpdate(data1, data2):
+       dupKeys = {}
+       for [k, v2] in data2:
+          if k in data1:
+          v1 = data1[k]
+             if v1 != v2:
+                dupKeys[k] = [v1, v2]
+                del data1[k]
+             else:
+               data1[k] = v2
+       return dupKeys
+
+5 c)
+
+Test Case 1:
+
+n1 = 4
+1 2
+3 3
+3 8
+4 9
+
+n2 = 2
+3 3
+4 4
+
+Test case 2:
+
+n1 = 4
+1 2
+2 2
+3 3
+4 19
+
+n2 = 2
+2 2
+4 19
+
+Test case 3:
+
+test case written in 5a results in error
